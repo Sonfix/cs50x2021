@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            String.prototype.capitalize = function() {
+                return this.charAt(0).toUpperCase() + this.slice(1);
+            };
+
+            function checkFirst(id) {
+                let cont = document.querySelector('#btn-cnt');
+                var childs = cont.children;
+                for (let i = 0; i < childs.length; i++)
+                {
+                    var child = childs[i];
+                    child.className = "";
+                }
+
+                let btn = document.getElementById("1-" + id);
+                if (id == Math.round(Math.pow(125, (1/3))))
+                {
+                    btn.classList.add("correct");
+                    setHint("hint_1", "correct");
+                }
+                else
+                {
+                    btn.classList.add("incorrect");
+                    setHint("hint_1", "incorrect");
+                }
+            }
+
+            function checkSecond(id) {
+                let cont = document.querySelector('#btn-cnt-2');
+                var childs = cont.children;
+                for (let i = 0; i < childs.length; i++)
+                {
+                    var child = childs[i];
+                    child.className = "";
+                }
+
+                let btn = document.getElementById("2-" + id);
+                if (id == Math.round((29414 / 1337) / 11))
+                {
+                    btn.classList.add("correct");
+                    setHint("hint_4", "correct");
+                }
+                else
+                {
+                    btn.classList.add("incorrect");
+                    setHint("hint_4", "incorrect");
+                }
+            }
+
+            function setHint(obj_id, val) {
+                var hint = document.querySelector('#' + obj_id);
+
+                while( hint.firstChild ) {
+                    hint.removeChild( hint.firstChild );
+                }
+
+                hint.hidden = false;
+                hint.className = "";
+                hint.classList.add(val + "-span");
+                hint.appendChild( document.createTextNode(val.capitalize()) );
+            }
+
+            function checkFreeFirst() {
+                var input = document.querySelector('#answer-1');
+                var answer = input.value;
+                if (btoa(answer) == "U2Ftc3VuZw==") // don't make it toooo obvious
+                {
+                    input.className = "";
+                    input.classList.add("correct");
+                    setHint("hint_2", "correct");
+                }
+                else
+                {
+                    input.className = "";
+                    input.classList.add("incorrect");
+                    setHint("hint_2", "incorrect");
+                }
+            }
+
+            function checkFreeSecond() {
+                var input = document.querySelector('#answer-2');
+                var answer = input.value;
+                if (btoa(answer) == "TWFyaWUgQ3VyaWU=") // don't make it toooo obvious
+                {
+                    input.className = "";
+                    input.classList.add("correct");
+                    setHint("hint_3", "correct");
+                }
+                else
+                {
+                    input.className = "";
+                    input.classList.add("incorrect");
+                    setHint("hint_3", "incorrect");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is "anatidaephobia"?</h3>
+                <span id="hint_1" hidden></span>
+                <div id="btn-cnt">
+                    <button id="1-1" onclick="checkFirst(1)">Fear of Dogs</button>
+                    <button id="1-4" onclick="checkFirst(4)">Fear of Cars</button>
+                    <button id="1-2" onclick="checkFirst(2)">Fear of Cats</button>
+                    <button id="1-5" onclick="checkFirst(5)">Fear of being watched by ducks</button>
+                    <button id="1-3" onclick="checkFirst(3)">Fear of Horses</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the name of the biggest technology company in South Korea?</h3>
+                <span id="hint_2" hidden></span>
+                <div class="flex">
+                    <input type="text" id="answer-1">
+                    <button id="submit-1" onclick="checkFreeFirst()" style="margin-left: 16px;">Check Awnser</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 3: Another Free Response</h2>
+                <hr>
+                <h3>Who was the first woman to win a Nobel Prize (in 1903)?</h3>
+                <span id="hint_3" hidden></span>
+                <div class="flex">
+                    <input type="text" id="answer-2">
+                    <button id="submit-2" onclick="checkFreeSecond()" style="margin-left: 16px;">Check Awnser</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 1: Another Multiple Choice </h2>
+                <hr>
+                <h3>How long is New Zealand’s Ninety Mile Beach?</h3>
+                <span id="hint_4" hidden></span>
+                <div id="btn-cnt-2">
+                    <button id="2-1" onclick="checkSecond(1)">90 miles</button>
+                    <button id="2-4" onclick="checkSecond(4)">91 miles</button>
+                    <button id="2-2" onclick="checkSecond(2)">55 miles</button>
+                    <button id="2-5" onclick="checkSecond(5)">69 miles</button>
+                    <button id="2-3" onclick="checkSecond(3)">90 km</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

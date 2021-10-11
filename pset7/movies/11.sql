@@ -1,0 +1,1 @@
+SELECT m.title FROM movies m, people p, stars s, ratings r WHERE m.id = s.movie_id AND s.person_id = p.id AND m.id = r.movie_id AND s.person_id IN (SELECT id FROM people WHERE name = "Chadwick Boseman") ORDER BY r.rating DESC LIMIT 5;
