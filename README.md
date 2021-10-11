@@ -2,8 +2,11 @@
 
 My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.harvard.edu/x/2021/).
 
+## [Academic Honesty](https://cs50.harvard.edu/x/2021/honesty/)
+
 ## Table of Contents
 
+- [Week 0: Scratch](#week-0)
 - [Week 1: C](#week-1)
 - [Week 2: Arrays](#week-2)
 - [Week 3: Algorithms](#week-3)
@@ -16,6 +19,10 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 - [Week 10 Ethics](#week-10)
 - Final Project
 
+
+## Week 0
+
+* [Scratch](https://scratch.mit.edu/projects/581727670/)
 
 ## Week 1
 
