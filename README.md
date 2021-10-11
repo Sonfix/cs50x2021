@@ -26,7 +26,7 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 
 ### Problem set 1
 
-* [Mario more version](pset1/mario/more/mario.c)
+* [Mario more version](pset1/mario/mario.c)
 * [Credit](pset1/credit/credit.c)
 
 
@@ -56,18 +56,18 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 
 ### Lab 4
 
-* [Volume](pset4/volume/lab4/volume/volume.c)
+* [Volume](pset4/volume/lab4/volume.c)
 
 ### Problem set 4
 
-* [Filter more version](pset4/filter/more/helpers.c)
+* [Filter more version](pset4/filter/helpers.c)
 * [Recover](pset4/recover/recover.c)
 
 ## Week 5
 
 ### Lab 5
 
-* [Inheritance](lab5/inheritance/inheritance.c)
+* [Inheritance](lab5/inheritance.c)
 
 ### Problem set 5
 
@@ -77,7 +77,7 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 
 ### Lab 6
 
-* [Tournament](lab6/tournament/tournament.py)
+* [Tournament](lab6/tournament.py)
 
 ### Problem set 6
 
@@ -91,7 +91,7 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 
 ### Lab 7
 
-* [Songs](lab7/songs)
+* [Songs](lab7/)
 
 ### Problem set 7
 
@@ -102,7 +102,7 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 
 ### Lab 8
 
-* [Trivia](lab8/trivia/index.html)
+* [Trivia](lab8/index.html)
 
 ### Problem set 8
 
@@ -112,7 +112,7 @@ My solutions to problem sets and labs of [Harvard's CS50x 2021](https://cs50.har
 
 ### Lab 9
 
-* [Birthdays](lab9/birthdays)
+* [Birthdays](lab9/)
 
 ### Problem set 9
 
